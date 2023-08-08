@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+.code {
+  font-family: "Fira Mono", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(200, 200, 200);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(154, 154, 154);
+}
+.nav-link:hover {
+  border-bottom: 2px solid white;
+  margin-bottom: -2px;
+}
+.mongo {
+  color: #52ab4c;
+}
+.express {
+  color: #ffcb71;
+}
+.react {
+  color: #01d8ff;
+}
+.node {
+  color: #a0ff7a;
+}
+.languages {
+  transition: transform 0.2s ease-in;
+}
+.languages:hover {
+  transform: translateY(-15px);
+}
+@media only screen and (min-width: 992px) {
+  .top--project {
+    width: 70%;
+  }
+}
+.download--resume {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99999;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: "Download Resume";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -200px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-left: 200px;
+}
+.button:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+.big--para {
+  text-align: justify;
+  text-justify: inter-word;
+}
