@@ -69,7 +69,7 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link text-white" to="/testimonials">
                 <button
                   type="button"
@@ -80,7 +80,7 @@ const Navbar = () => {
                   Testimonials
                 </button>
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link className="nav-link text-white" to="/contact">
                 <button
