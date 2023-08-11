@@ -162,7 +162,7 @@ const Contact = () => {
                     rel="noopener noreferrer"
                   >
                     <i className="bi bi-geo-alt-fill text-dark me-2"></i>
-                    <span className="fw-bold">Address:</span> Ghansoli, Navi
+                    <span className="fw-bold">Address:</span> taloja navi mumbai, Navi
                     Mumbai
                   </a>
                 </li>
