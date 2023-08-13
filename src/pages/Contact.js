@@ -157,12 +157,12 @@ const Contact = () => {
                 <li className="list-group-item">
                   <a
                     className="text-decoration-none text-black"
-                    href="https://www.google.com/maps/place/Ghansoli,+Navi+Mumbai,+Maharashtra/@19.1265698,72.9837973,14z/data=!3m1!4b1!4m6!3m5!1s0x3be7c0ae08fd4fcb:0xeb29360c730e957f!8m2!3d19.1253629!4d72.9992013!16zL20vMDkxeHNy"
+                    href="https://www.bing.com/maps?&mepi=24~~TopOfPage~LargeMapLink&ty=18&q=Taloja%20Panchnad%2C%20Panvel%2C%20Maharashtra%2C%20India&satid=id.sid%3A7c030492-1f48-3a8d-d413-963df88c0db1&vdpid=7459860557135347713&mb=19.086071~73.086067~19.069052~73.102844&ppois=19.077561378479004_73.09445571899414_Taloja%20Panchnad%2C%20Panvel%2C%20Maharashtra%2C%20India_~&cp=19.077561~73.094456&v=2&sV=1&FORM=MIRE&qpvt=taloja+maps+url"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <i className="bi bi-geo-alt-fill text-dark me-2"></i>
-                    <span className="fw-bold">Address:</span> taloja navi mumbai, Navi
+                    <span className="fw-bold">Address:</span> Ghansoli, Navi
                     Mumbai
                   </a>
                 </li>
