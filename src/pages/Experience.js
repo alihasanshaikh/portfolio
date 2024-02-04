@@ -1,5 +1,4 @@
 import React from "react";
-import appavengers from "../assets/AppAvengers.jpg";
 import nullclass from "../assets/nullclass.png";
 import hasbasoft from "../assets/hasbasoft.png";
 //import fiver from "../assets/fiver.png";
@@ -55,7 +54,7 @@ const Experience = () => {
         <div className="row align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
-              src={appavengers}
+              src={hasbasoft}
               className="d-block mx-lg-auto img-fluid rounded-4"
               alt="appavengers"
               loading="lazy"
