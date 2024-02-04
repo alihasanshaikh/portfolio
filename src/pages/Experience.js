@@ -7,28 +7,13 @@ import netflix from "../assets/Netflix_Clone.png";
 import dice from "../assets/Dice_Game_with_JS.png";
 import music from "../assets/Music_with_JS.png";
 import ecommerce from "../assets/E-Commerce_Web_App.png";
-import training from "../assets/Certificate_of_Training-NullClass.png";
-import internship from "../assets/Internship Certificate - NullClass.png";
+
 import Resume from "../components/Resume";
 
 const Experience = () => {
   const certificates = [
-    {
-      id: "01",
-      title: "Certificate of SSC",
-      image: internship,
-      alt: "certificate_of_internship",
-      description:
-        "MY certificate from diloma",
-    },
-    {
-      id: "02",
-      title: "Certificate of Training",
-      image: training,
-      alt: "certificate_of_training",
-      description:
-        "I have successfully completed my Scholing",
-    },
+    
+
     {
       id: "03",
       title: "E-Commerce Portal",
