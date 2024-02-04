@@ -11,6 +11,7 @@ import Experience from "./pages/Experience";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 function App() {
   useEffect(() => {
