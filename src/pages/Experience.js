@@ -114,7 +114,7 @@ const Experience = () => {
                 className="img-fluid"
                 alt="hasbasoft"
                 loading="lazy"
-                data-aos="fade-right"
+                data-aos="fade-left"
                 style={{ maxHeight: "80px" }}
               />
             </div>
