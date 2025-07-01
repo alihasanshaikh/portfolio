@@ -56,37 +56,68 @@ const Experience = () => {
             <img
               src={hasbasoft}
               className="d-block mx-lg-auto img-fluid rounded-4"
-              alt="appavengers"
+              alt="hasbasoft"
               loading="lazy"
               data-aos="fade-left"
             />
           </div>
           <div className="col-md-8 col-sm-12">
             <h1 className="display-4 fw-bold" data-aos="fade-right">
-              MERN Stack Developer Trainee
+              Full Stack Developer
             </h1>
             <h1 className="fw-light">- Hasbasoft Pvt Ltd</h1>
             <p>
-              July 2023 to Present{" "}
-              <span className="text-secondary">( Online )</span>
+              December 2024 to June 2025{" "}
+              <span className="text-secondary">( 6 Months )</span>
             </p>
             <p className="mb-0">Achievements/Tasks:</p>
             <p className="lead big--para">
-              As a MERN Stack Developer Trainee at Hasbasoft Pvt Ltd, I
-              contributing to web app development with MongoDB, Express.js,
-              React.js, and Node.js. Designing interfaces, implementing
-              features, and engaging in code reviews for continuous learning.
+              As a Full Stack Developer at Hasbasoft Pvt Ltd, I am responsible for 
+              developing end-to-end web applications using the MERN stack. My role 
+              involves designing and implementing both frontend user interfaces and 
+              backend APIs, managing databases, and ensuring seamless integration 
+              between all components. I collaborate with cross-functional teams to 
+              deliver scalable and efficient web solutions while maintaining code 
+              quality and following best practices.
             </p>
           </div>
         </div>
         <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
+              src={hasbasoft}
+              className="d-block mx-lg-auto img-fluid rounded-4"
+              alt="appavengers"
+              loading="lazy"
+              data-aos="fade-right"
+            />
+          </div>
+          <div className="col-md-8 col-sm-12">
+            <h1 className="display-4 fw-bold" data-aos="fade-left">
+              MERN Stack Developer Trainee
+            </h1>
+            <h1 className="fw-light">- Hasbasoft Pvt Ltd</h1>
+            <p>
+              July 2023 to November 2024{" "}
+              <span className="text-secondary">( Online )</span>
+            </p>
+            <p className="mb-0">Achievements/Tasks:</p>
+            <p className="lead big--para">
+              As a MERN Stack Developer Trainee at Hasbasoft Pvt Ltd, I
+              contributed to web app development with MongoDB, Express.js,
+              React.js, and Node.js. Designing interfaces, implementing
+              features, and engaging in code reviews for continuous learning.
+            </p>
+          </div>
+        </div>
+        <div className="row align-items-md-center py-5 g-4 border-bottom">
+          <div className="col-md-4 d-md-block mt-0">
+            <img
               src={nullclass}
               className="d-block mx-lg-auto img-fluid"
               alt="nullclass"
               loading="lazy"
-              data-aos="fade-right"
+              data-aos="fade-left"
             />
           </div>
           {/* <div className="col-md-8 col-sm-12">
@@ -108,18 +139,18 @@ const Experience = () => {
             </p>
           </div> */}
         </div>
-        <div className="row align-items-md-center py-5 g-4 border-bottom">
+        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
               src={hasbasoft}
               className="d-block mx-lg-auto img-fluid"
               alt="hasbasoft"
               loading="lazy"
-              data-aos="fade-left"
+              data-aos="fade-right"
             />
           </div>
           <div className="col-md-8 col-sm-12">
-            <h1 className="display-4 fw-bold" data-aos="fade-right">
+            <h1 className="display-4 fw-bold" data-aos="fade-left">
               MERN Stack Software Trainee
             </h1>
             <h1 className="fw-light">- Hasbasoft Technology Pvt Ltd</h1>
@@ -138,7 +169,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
+        <div className="row align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             {/* <img
               src={fiver}
