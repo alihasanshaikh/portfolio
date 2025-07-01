@@ -110,7 +110,7 @@ const Experience = () => {
           <div className="col-md-4 d-md-block mt-0">
             <div className="d-flex justify-content-center align-items-center bg-white rounded-4 p-3 shadow-sm">
               <img
-                src="https://hasbasoft.com/assets/images/logo.png"
+                src="https://diy-assets.classplus.co/_next/image?url=https://cdn-diy-public.classplus.co/prod/HasbasoftLogo5k_1721916411592.png&w=1920&q=75"
                 className="img-fluid"
                 alt="hasbasoft"
                 loading="lazy"
