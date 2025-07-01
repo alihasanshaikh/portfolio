@@ -56,13 +56,44 @@ const Experience = () => {
             <img
               src={hasbasoft}
               className="d-block mx-lg-auto img-fluid rounded-4"
-              alt="hasbasoft"
+              alt="britwise"
               loading="lazy"
               data-aos="fade-left"
             />
           </div>
           <div className="col-md-8 col-sm-12">
             <h1 className="display-4 fw-bold" data-aos="fade-right">
+              Full Stack Developer Intern
+            </h1>
+            <h1 className="fw-light">- Britwise Technologies Pvt Ltd</h1>
+            <p>
+              December 28, 2024 to June 28, 2025{" "}
+              <span className="text-secondary">( 6 Months )</span>
+            </p>
+            <p className="mb-0">Achievements/Tasks:</p>
+            <p className="lead big--para">
+              As a Full Stack Developer Intern at Britwise Technologies Pvt Ltd, I am 
+              gaining hands-on experience in developing comprehensive web applications 
+              using modern technologies. My internship involves working on both frontend 
+              and backend development, learning industry best practices, and contributing 
+              to real-world projects. I am developing skills in full-stack development, 
+              database management, API integration, and collaborative software development 
+              while working alongside experienced developers.
+            </p>
+          </div>
+        </div>
+        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
+          <div className="col-md-4 d-md-block mt-0">
+            <img
+              src={hasbasoft}
+              className="d-block mx-lg-auto img-fluid rounded-4"
+              alt="hasbasoft"
+              loading="lazy"
+              data-aos="fade-right"
+            />
+          </div>
+          <div className="col-md-8 col-sm-12">
+            <h1 className="display-4 fw-bold" data-aos="fade-left">
               Full Stack Developer
             </h1>
             <h1 className="fw-light">- Hasbasoft Pvt Ltd</h1>
@@ -82,18 +113,18 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
+        <div className="row align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
               src={hasbasoft}
               className="d-block mx-lg-auto img-fluid rounded-4"
-              alt="appavengers"
+              alt="hasbasoft"
               loading="lazy"
-              data-aos="fade-right"
+              data-aos="fade-left"
             />
           </div>
           <div className="col-md-8 col-sm-12">
-            <h1 className="display-4 fw-bold" data-aos="fade-left">
+            <h1 className="display-4 fw-bold" data-aos="fade-right">
               MERN Stack Developer Trainee
             </h1>
             <h1 className="fw-light">- Hasbasoft Pvt Ltd</h1>
@@ -110,14 +141,14 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="row align-items-md-center py-5 g-4 border-bottom">
+        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
               src={nullclass}
               className="d-block mx-lg-auto img-fluid"
               alt="nullclass"
               loading="lazy"
-              data-aos="fade-left"
+              data-aos="fade-right"
             />
           </div>
           {/* <div className="col-md-8 col-sm-12">
@@ -139,18 +170,18 @@ const Experience = () => {
             </p>
           </div> */}
         </div>
-        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
+        <div className="row align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             <img
               src={hasbasoft}
               className="d-block mx-lg-auto img-fluid"
               alt="hasbasoft"
               loading="lazy"
-              data-aos="fade-right"
+              data-aos="fade-left"
             />
           </div>
           <div className="col-md-8 col-sm-12">
-            <h1 className="display-4 fw-bold" data-aos="fade-left">
+            <h1 className="display-4 fw-bold" data-aos="fade-right">
               MERN Stack Software Trainee
             </h1>
             <h1 className="fw-light">- Hasbasoft Technology Pvt Ltd</h1>
@@ -169,7 +200,7 @@ const Experience = () => {
             </p>
           </div>
         </div>
-        <div className="row align-items-md-center py-5 g-4 border-bottom">
+        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
             {/* <img
               src={fiver}
