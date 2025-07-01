@@ -12,6 +12,10 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    
+    // Show loading toast
+    const loadingToast = toast.loading("Sending message...");
+    
     emailjs
       .sendForm(
         "service_e4fjwoz",
@@ -21,14 +25,18 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          toast.success("Message Sent Successfully. Thank You for Contacting!");
+          toast.dismiss(loadingToast);
+          toast.success("Message Sent Successfully! Thank You for Contacting!");
+          console.log("Email sent successfully:", result.text);
           setTimeout(() => {
             navigate("/");
           }, 3000);
           e.target.reset();
         },
         (error) => {
-          toast.error(error.text);
+          toast.dismiss(loadingToast);
+          toast.error(`Failed to send message: ${error.text || 'Please try again later'}`);
+          console.error("Email send error:", error);
         }
       );
   };
@@ -51,13 +59,30 @@ const Contact = () => {
             />
           </div>
           <div className="col-lg-6 m-auto mb-4">
-            <Toaster />
+            <Toaster 
+              position="top-center"
+              toastOptions={{
+                duration: 4000,
+                style: {
+                  background: '#363636',
+                  color: '#fff',
+                },
+                success: {
+                  duration: 3000,
+                  theme: {
+                    primary: 'green',
+                    secondary: 'black',
+                  },
+                },
+              }}
+            />
             <form
               className="border border-primary border-5 bg-light shadow-lg rounded-5 p-4"
               ref={form}
               onSubmit={sendEmail}
             >
               <div className="col-12 mb-4">
+                <label htmlFor="inputName" className="form-label">Name *</label>
                 <input
                   type="text"
                   className="form-control"
@@ -65,9 +90,11 @@ const Contact = () => {
                   placeholder="Enter your Name here..."
                   name="from_name"
                   required
+                  minLength="2"
                 />
               </div>
               <div className="col-12 mb-4">
+                <label htmlFor="inputEmail" className="form-label">Email *</label>
                 <input
                   type="email"
                   className="form-control"
@@ -77,7 +104,18 @@ const Contact = () => {
                   required
                 />
               </div>
+              <div className="col-12 mb-4">
+                <label htmlFor="inputSubject" className="form-label">Subject</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inputSubject"
+                  placeholder="Enter subject here..."
+                  name="subject"
+                />
+              </div>
               <div className="mb-4">
+                <label htmlFor="inputMessage" className="form-label">Message *</label>
                 <textarea
                   className="form-control"
                   id="inputMessage"
@@ -85,11 +123,13 @@ const Contact = () => {
                   rows="4"
                   name="message"
                   required
+                  minLength="10"
                 ></textarea>
               </div>
               <div>
                 <button className="btn btn-primary w-100" type="submit">
-                  Contact Now
+                  <i className="bi bi-send me-2"></i>
+                  Send Message
                 </button>
               </div>
             </form>
