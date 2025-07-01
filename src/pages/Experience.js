@@ -72,7 +72,7 @@ const Experience = () => {
         {/* Current Experience */}
         <div className="row align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
-            <div className="d-flex justify-content-center align-items-center bg-white rounded-4 p-3 shadow-sm">
+            <div className="d-flex justify-content-center align-items-center bg-dark rounded-4 p-3 shadow-sm">
               <img
                 src="https://www.britwise.com/assets/imgs/logo-orange.png"
                 className="img-fluid"
