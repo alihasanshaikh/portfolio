@@ -138,6 +138,59 @@ const Experience = () => {
           </div>
         </div>
 
+        <div className="row align-items-md-center py-5 g-4 border-bottom">
+          <div className="col-md-4 d-md-block mt-0">
+            <div className="d-flex justify-content-center align-items-center bg-secondary rounded-4 p-3 shadow-sm">
+              <h3 className="text-white mb-0 fw-bold">NullClass</h3>
+            </div>
+          </div>
+          <div className="col-md-8 col-sm-12">
+            <h1 className="display-4 fw-bold" data-aos="fade-up">
+              Project Intern
+            </h1>
+            <h1 className="fw-light">- NullClass</h1>
+            <p>
+              December 2022 to January 2023{" "}
+              <span className="text-secondary">( Online )</span>
+            </p>
+            <p className="mb-0">Achievements/Tasks:</p>
+            <p className="lead big--para">
+              As a project intern, I created a responsive MERN
+              Stack app (Stack Overflow Clone) and added features like a chat
+              bot and community section. I gained valuable experience in
+              React, Node.js, Express.js, and MongoDB, improving my skills in
+              building scalable and user-centric web applications.
+            </p>
+          </div>
+        </div>
+
+        <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
+          <div className="col-md-4 d-md-block mt-0">
+            <div className="d-flex justify-content-center align-items-center bg-primary rounded-4 p-3 shadow-sm">
+              <h3 className="text-white mb-0 fw-bold">Hasbasoft</h3>
+            </div>
+          </div>
+          <div className="col-md-8 col-sm-12">
+            <h1 className="display-4 fw-bold" data-aos="fade-right">
+              MERN Stack Software Trainee
+            </h1>
+            <h1 className="fw-light">- Hasbasoft Technology Pvt Ltd</h1>
+            <p>
+              August 2021 to October 2022{" "}
+              <span className="text-secondary">( Online )</span>
+            </p>
+            <p className="mb-0">Achievements/Tasks:</p>
+            <p className="lead big--para">
+              As a Software Trainee at Hasbasoft Technology Pvt Ltd, I built
+              several MERN Stack applications, including an Ecommerce platform.
+              Through hands-on experience, I gained expertise in React,
+              Node.js, Express.js, and MongoDB, developing dynamic and
+              user-friendly web solutions in a professional software development
+              environment.
+            </p>
+          </div>
+        </div>
+
         {/* Certificates Section */}
         <div className="py-5">
           <h1 className="mt-5 pb-2 text-center text-uppercase display-4 fw-bold">
