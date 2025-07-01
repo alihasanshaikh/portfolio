@@ -108,8 +108,15 @@ const Experience = () => {
         {/* Previous Experiences */}
         <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
-            <div className="d-flex justify-content-center align-items-center bg-primary rounded-4 p-3 shadow-sm">
-              <h3 className="text-white mb-0 fw-bold">Hasbasoft</h3>
+            <div className="d-flex justify-content-center align-items-center bg-white rounded-4 p-3 shadow-sm">
+              <img
+                src="https://hasbasoft.com/assets/images/logo.png"
+                className="img-fluid"
+                alt="hasbasoft"
+                loading="lazy"
+                data-aos="fade-right"
+                style={{ maxHeight: "80px" }}
+              />
             </div>
           </div>
           <div className="col-md-8 col-sm-12">
@@ -159,8 +166,15 @@ const Experience = () => {
 
         <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
-            <div className="d-flex justify-content-center align-items-center bg-primary rounded-4 p-3 shadow-sm">
-              <h3 className="text-white mb-0 fw-bold">Hasbasoft</h3>
+            <div className="d-flex justify-content-center align-items-center bg-white rounded-4 p-3 shadow-sm">
+              <img
+                src="https://hasbasoft.com/assets/images/logo.png"
+                className="img-fluid"
+                alt="hasbasoft"
+                loading="lazy"
+                data-aos="fade-left"
+                style={{ maxHeight: "80px" }}
+              />
             </div>
           </div>
           <div className="col-md-8 col-sm-12">
