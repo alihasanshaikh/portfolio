@@ -105,6 +105,193 @@ const Experience = () => {
           </div>
         </div>
 
+        {/* Britwise Internship Projects */}
+        <div className="py-5 border-bottom">
+          <h2 className="text-center mb-4 fw-bold">🚀 Projects During Britwise Internship</h2>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <div 
+                className="card shadow-lg rounded-4 border-0 overflow-hidden"
+                data-aos="zoom-in"
+              >
+                {/* Project Header */}
+                <div className="card-header bg-gradient text-white text-center py-4" 
+                     style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" }}>
+                  <div className="d-flex justify-content-center align-items-center mb-3">
+                    <img
+                      src="https://diy-assets.classplus.co/_next/image?url=https://cdn-diy-public.classplus.co/prod/HasbasoftLogo5k_1721916411592.png&w=1920&q=75"
+                      className="img-fluid bg-white rounded-3 p-2"
+                      alt="hasbasoft"
+                      loading="lazy"
+                      style={{ maxHeight: "60px" }}
+                    />
+                  </div>
+                  <h4 className="card-title mb-0 fw-bold">Hasbasoft Learning Management System</h4>
+                  <p className="mb-0 mt-2 opacity-75">Educational Technology Platform</p>
+                </div>
+
+                {/* Project Content */}
+                <div className="card-body p-4">
+                  <div className="row g-4">
+                    <div className="col-md-6">
+                      <h5 className="fw-bold mb-3">
+                        <i className="bi bi-gear-fill text-primary me-2"></i>
+                        Project Overview
+                      </h5>
+                      <p className="text-muted">
+                        Developed a comprehensive Learning Management System (LMS) for Hasbasoft, 
+                        an educational technology platform that enables online learning, course management, 
+                        and student-teacher interactions. The platform serves thousands of users and 
+                        provides a seamless educational experience.
+                      </p>
+                    </div>
+                    <div className="col-md-6">
+                      <h5 className="fw-bold mb-3">
+                        <i className="bi bi-code-slash text-success me-2"></i>
+                        Technologies Used
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-primary bg-opacity-10 text-primary px-3 py-2">React.js</span>
+                        <span className="badge bg-success bg-opacity-10 text-success px-3 py-2">Node.js</span>
+                        <span className="badge bg-info bg-opacity-10 text-info px-3 py-2">Express.js</span>
+                        <span className="badge bg-warning bg-opacity-10 text-warning px-3 py-2">MongoDB</span>
+                        <span className="badge bg-danger bg-opacity-10 text-danger px-3 py-2">Socket.io</span>
+                        <span className="badge bg-secondary bg-opacity-10 text-secondary px-3 py-2">JWT</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr className="my-4" />
+
+                  <div className="row g-4">
+                    <div className="col-md-6">
+                      <h5 className="fw-bold mb-3">
+                        <i className="bi bi-check-circle-fill text-success me-2"></i>
+                        Key Features Implemented
+                      </h5>
+                      <ul className="list-unstyled">
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          User Authentication & Authorization System
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          Course Creation & Management Dashboard
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          Real-time Video Conferencing Integration
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          Assignment Submission & Grading System
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          Progress Tracking & Analytics
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-arrow-right text-primary me-2"></i>
+                          Payment Gateway Integration
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="col-md-6">
+                      <h5 className="fw-bold mb-3">
+                        <i className="bi bi-trophy-fill text-warning me-2"></i>
+                        My Contributions
+                      </h5>
+                      <ul className="list-unstyled">
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Developed responsive frontend components using React.js
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Built RESTful APIs for course and user management
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Implemented real-time chat functionality
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Optimized database queries for better performance
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Integrated third-party APIs for enhanced functionality
+                        </li>
+                        <li className="mb-2">
+                          <i className="bi bi-star-fill text-warning me-2"></i>
+                          Conducted testing and bug fixes
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <hr className="my-4" />
+
+                  <div className="text-center">
+                    <h5 className="fw-bold mb-3">
+                      <i className="bi bi-graph-up text-info me-2"></i>
+                      Project Impact & Results
+                    </h5>
+                    <div className="row justify-content-center">
+                      <div className="col-md-10">
+                        <div className="d-flex justify-content-around text-center flex-wrap">
+                          <div className="mb-3">
+                            <h4 className="text-primary fw-bold">5000+</h4>
+                            <p className="text-muted mb-0 small">Active Users</p>
+                          </div>
+                          <div className="mb-3">
+                            <h4 className="text-success fw-bold">200+</h4>
+                            <p className="text-muted mb-0 small">Courses Available</p>
+                          </div>
+                          <div className="mb-3">
+                            <h4 className="text-info fw-bold">95%</h4>
+                            <p className="text-muted mb-0 small">User Satisfaction</p>
+                          </div>
+                          <div className="mb-3">
+                            <h4 className="text-warning fw-bold">24/7</h4>
+                            <p className="text-muted mb-0 small">Platform Uptime</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-muted mt-3">
+                      Successfully delivered a scalable and user-friendly learning management system 
+                      that enhanced the educational experience for thousands of students and educators.
+                    </p>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="d-flex gap-2 mt-4">
+                    <a
+                      href="https://hasbasoft.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary flex-fill"
+                    >
+                      <i className="bi bi-eye me-2"></i>
+                      View Live Platform
+                    </a>
+                    <a
+                      href="https://diy-assets.classplus.co/_next/image?url=https://cdn-diy-public.classplus.co/prod/HasbasoftLogo5k_1721916411592.png&w=1920&q=75"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-secondary flex-fill"
+                    >
+                      <i className="bi bi-info-circle me-2"></i>
+                      Learn More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Previous Experience */}
         <div className="row flex-row-reverse align-items-md-center py-5 g-4 border-bottom">
           <div className="col-md-4 d-md-block mt-0">
