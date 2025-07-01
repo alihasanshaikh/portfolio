@@ -1,182 +1,251 @@
-// import React from "react";
-// import ecommerce from "../assets/E-Commerce Web App - Thumbnail.jpg";
-// import primevideo from "../assets/Prime Video Clone - Mark 2 -  Tumbnail.jpg";
-// import netflix from "../assets/Netflix Clone - Mark 2 - Thumbnail.jpg";
-//import memories from "../assets/Memories - Thumbnail.jpg";
-//import stack from "../assets/Stack-Overflow-Clone-Thumbnail.jpg";
-//import youtube from "../assets/YouTube-Clone-Thumbnail.png";
-//import social from "../assets/SocialNetwork - Functionalities Mark 2 - Thumbnail.jpg";
-//import dashboard from "../assets/Dashboard-Thumbnail.webp";
-//import Resume from "../components/Resume";
+import React from "react";
+import ecommerce from "../assets/E-Commerce_Web_App.png";
+import netflix from "../assets/Netflix_Clone.png";
+import dice from "../assets/Dice_Game_with_JS.png";
+import music from "../assets/Music_with_JS.png";
+import Resume from "../components/Resume";
 
-// const Projects = () => {
-//   const topProjects = [
-//     {
-//       id: "01",
-//       title: "Memories",
-//       thumbnail: memories,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1677522816/Portfolio/Memories_jucigw.mp4",
-//       description:
-//         "Experience the power of MERN stack in our Memories application! Harnessing MongoDB for data storage, ExpressJS for server-side development, ReactJS for dynamic user interfaces, and NodeJS for backend support. Integrated with Google OAuth for seamless login, Redux and Redux-Thunk for state management, and enhanced with React Hooks and CORS for flexibility. Delve into our rich feature set and unleash the potential of Context/RESTful API integration. Unleash your memories today!",
-//       link: "https://memories-wheat.vercel.app",
-//     },
-//     {
-//       id: "02",
-//       title: "Stack Overflow Clone",
-//       thumbnail: stack,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1677522473/Portfolio/Stack-Overflow-Clone_i8ggps.mp4",
-//       description:
-//         "Discover a powerful Stack Overflow clone built on the MERN stack. Harness the potential of MongoDB, ExpressJS, ReactJS, and NodeJS, combined with advanced features like Axios, Redux, Redux-Thunk, React Hooks, CORS, and Context/RESTful API integration. Enjoy a seamless experience in a feature-rich environment for all your coding queries and discussions.",
-//       link: "https://stackoverflow-mukesh.netlify.app",
-//     },
-//     {
-//       id: "03",
-//       title: "YouTube Clone",
-//       thumbnail: youtube,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1690720403/Portfolio/YouTube-Clone_f1tl2t.mp4",
-//       description:
-//         "The fully responsive YouTube Clone application built with React.js, the YouTube API, Axios, and Bootstrap aimsto replicate the core functionality and user experience of YouTube while providing a seamless and intuitiveinterface for users to discover, watch, and engage with videos.",
-//       link: "https://you-tube-clone-orcin.vercel.app",
-//     },
-//     {
-//       id: "04",
-//       title: "Dashboard",
-//       thumbnail: dashboard,
-//       video: "",
-//       description:
-//         "Experience the ultimate MERN Stack Admin Dashboard - efficient, user-friendly, and powerful. Manage projects, visualize data with Nivo Charts, and enjoy seamless state management with Redux Toolkit. Our backend runs on Node JS, Express JS, Mongoose, and MongoDB, providing a robust foundation for your success. Take control of your data and productivity today!",
-//       link: "https://dashboard-smoky-three.vercel.app",
-//       danger: "This Project is Under Development! But You can View It Live.",
-//     },
-//   ];
+const Projects = () => {
+  const topProjects = [
+    {
+      id: "01",
+      title: "E-Commerce Web Application",
+      thumbnail: ecommerce,
+      description:
+        "A comprehensive e-commerce platform built with the MERN stack. Features include user authentication, product catalog, shopping cart, order management, payment integration, and admin dashboard. Implemented with React.js for frontend, Node.js and Express.js for backend, and MongoDB for database management.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Bootstrap", "JWT"],
+      github: "https://github.com/alihasanshaikh",
+      live: "#"
+    },
+    {
+      id: "02",
+      title: "Netflix Clone",
+      thumbnail: netflix,
+      description:
+        "A responsive Netflix clone built with HTML, CSS, and JavaScript. Features include movie browsing, search functionality, responsive design, and modern UI/UX. Demonstrates proficiency in frontend development and creating pixel-perfect designs.",
+      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+      github: "https://github.com/alihasanshaikh",
+      live: "#"
+    },
+    {
+      id: "03",
+      title: "Interactive Dice Game",
+      thumbnail: dice,
+      description:
+        "An engaging dice game built with advanced JavaScript. Features include multiplayer functionality, score tracking, game state management, and interactive animations. Demonstrates expertise in JavaScript programming and game development logic.",
+      technologies: ["JavaScript", "HTML5", "CSS3", "DOM Manipulation"],
+      github: "https://github.com/alihasanshaikh",
+      live: "#"
+    },
+    {
+      id: "04",
+      title: "Music Player Application",
+      thumbnail: music,
+      description:
+        "A feature-rich music player web application built with JavaScript. Includes playlist management, audio controls, progress tracking, shuffle and repeat modes, and responsive design. Showcases advanced JavaScript skills and audio API integration.",
+      technologies: ["JavaScript", "HTML5", "CSS3", "Audio API", "Local Storage"],
+      github: "https://github.com/alihasanshaikh",
+      live: "#"
+    }
+  ];
 
-//   const olderProjects = [
-//     {
-//       id: "01",
-//       title: "E-Commerce",
-//       thumbnail: ecommerce,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1677433153/Portfolio/E-Commerce_Web_App_vks4xk.mp4",
-//       description:
-//         "Experience seamless online shopping with our React-based e-commerce app. Powered by ReactJS, Firebase, and Firestore, it utilizes Context API, AJAX, and React Hooks for smooth interactions. With Express, CORS, NodeJS, and RESTful API integration, it ensures secure and efficient data management. Enjoy a user-friendly interface and hassle-free transactions.",
-//     },
-//     {
-//       id: "02",
-//       title: "Prime Video Clone",
-//       thumbnail: primevideo,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1677433139/Portfolio/Prime_Video_Clone_-_Mark_2_rvaaxv.mp4",
-//       description:
-//         "Discover a captivating streaming experience with our Prime Video clone website. Crafted with HTML, CSS, and Javascript, it offers a vast library of movies and TV shows for your enjoyment. Immerse yourself in high-quality content, user-friendly navigation, and personalized recommendations, all within a sleek and intuitive interface. Start binge-watching today!",
-//     },
-//     {
-//       id: "03",
-//       title: "Netflix Clone",
-//       thumbnail: netflix,
-//       video:
-//         "https://res.cloudinary.com/mksh400/video/upload/v1677432866/Portfolio/Netflix_Clone_-_Mark_2_v26jzf.mp4",
-//       description:
-//         "Introducing our Netflix clone website! Built using HTML, CSS, and Javascript, this platform offers a seamless streaming experience. Enjoy a vast library of movies and TV shows, personalized recommendations, and user-friendly interface. Dive into the world of entertainment and binge-watch your favorite content at your convenience.",
-//     },
-//   ];
+  const skills = [
+    "React.js", "Node.js", "Express.js", "MongoDB", "JavaScript", "HTML5", "CSS3", 
+    "Bootstrap", "Tailwind CSS", "Git", "RESTful APIs", "JWT Authentication"
+  ];
 
-//   return (
-//     <div>
-//       <Resume />
-//       <div className="pt-5 mt-5 container container-fluid">
-//         <h2 className="pb-2 border-bottom">Top Applications</h2>
-//         <div className="row row-cols-1 mb-5">
-//           <div className="col">
-//             <div
-//               className="card shadow h-100 rounded-3 top--project mx-auto"
-//               data-aos="zoom-in"
-//             >
-//               <div className="card-header">
-//                 <h4 className="text-center">SocialNetwork</h4>
-//               </div>
-//               <video
-//                 src="https://res.cloudinary.com/mksh400/video/upload/v1677522935/Portfolio/SocialNetwork_-_Functionalities_-_Mark_2_ilzcad.mp4"
-//                 poster={social}
-//                 width="100%"
-//                 controls
-//               ></video>
-//               <title>SocialNetwork</title>
-//               <div className="card-body">
-//                 <p className="card-text">
-//                   Discover a powerful MERN stack social network app, fueled by
-//                   MongoDB, ExpressJS, ReactJS, and NodeJS. Experience seamless
-//                   media management with Cloudinary integration and efficient
-//                   email communication through SendGrid Email API. Leveraging
-//                   React Hooks, CORS, Context/RESTful API, and a plethora of
-//                   other cutting-edge technologies, this app redefines the social
-//                   networking landscape.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//         <div className="row row-cols-1 row-cols-md-2 g-3 mb-5">
-//           {topProjects.map((project) => (
-//             <div className="col" key={project.id} data-aos="zoom-in">
-//               <div className="card shadow h-100 rounded-3">
-//                 <div className="card-header">
-//                   <h4 className="text-center">{project.title}</h4>
-//                 </div>
-//                 <video
-//                   src={project.video}
-//                   poster={project.thumbnail}
-//                   width="100%"
-//                   controls
-//                 ></video>
-//                 <title>{project.title}</title>
-//                 <div className="card-body">
-//                   <p className="text-warning m-0 p-0">{project.warning}</p>
-//                   <p className="text-danger m-0 p-0">{project.danger}</p>
-//                   <p className="card-text">{project.description}</p>
-//                 </div>
-//                 <div className="card-footer">
-//                   <a
-//                     href={project.link}
-//                     target="_blank"
-//                     rel="noopener noreferrer"
-//                   >
-//                     <button type="button" className="btn btn-outline-primary">
-//                       View Live 👀
-//                     </button>
-//                   </a>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//         <h2 className="pb-2 border-bottom">Older Projects</h2>
-//         <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 mb-5 pb-4">
-//           {olderProjects.map((project) => (
-//             <div className="col" key={project.id} data-aos="zoom-in">
-//               <div className="card shadow h-100 rounded-3">
-//                 <div className="card-header">
-//                   <h4 className="text-center">{project.title}</h4>
-//                 </div>
-//                 <video
-//                   src={project.video}
-//                   poster={project.thumbnail}
-//                   width="100%"
-//                   controls
-//                 ></video>
-//                 <title>{project.title}</title>
-//                 <div className="card-body">
-//                   <p className="card-text">{project.description}</p>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+  return (
+    <div>
+      <Resume />
+      <div className="pt-5 mt-5 container container-fluid">
+        {/* Hero Section */}
+        <div className="text-center mb-5">
+          <h1 className="display-4 fw-bold mb-4" data-aos="fade-up">
+            My <span className="text-primary">Projects</span>
+          </h1>
+          <p className="lead col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="100">
+            Explore my portfolio of web development projects showcasing expertise in 
+            MERN stack development, responsive design, and modern web technologies.
+          </p>
+        </div>
 
-// export default Projects;
+        {/* Skills Overview */}
+        <div className="mb-5" data-aos="fade-up" data-aos-delay="200">
+          <h3 className="text-center mb-4">Technologies Used</h3>
+          <div className="d-flex flex-wrap justify-content-center gap-2">
+            {skills.map((skill, index) => (
+              <span 
+                key={index} 
+                className="badge bg-primary fs-6 px-3 py-2 rounded-pill"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="row row-cols-1 row-cols-md-2 g-4 mb-5">
+          {topProjects.map((project, index) => (
+            <div className="col" key={project.id}>
+              <div 
+                className="card shadow-lg h-100 rounded-4 border-0 overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
+              >
+                {/* Project Image */}
+                <div className="position-relative overflow-hidden">
+                  <img
+                    src={project.thumbnail}
+                    className="card-img-top"
+                    alt={project.title}
+                    style={{ height: "250px", objectFit: "cover" }}
+                  />
+                  <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex align-items-center justify-content-center opacity-0 transition-opacity" 
+                       style={{ transition: "opacity 0.3s ease" }}
+                       onMouseEnter={(e) => e.target.style.opacity = "1"}
+                       onMouseLeave={(e) => e.target.style.opacity = "0"}>
+                    <div className="text-center text-white">
+                      <i className="bi bi-eye-fill fs-1 mb-2"></i>
+                      <p className="mb-0">View Project</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project Content */}
+                <div className="card-body d-flex flex-column">
+                  <h4 className="card-title text-primary fw-bold mb-3">{project.title}</h4>
+                  <p className="card-text text-muted flex-grow-1">{project.description}</p>
+                  
+                  {/* Technologies */}
+                  <div className="mb-3">
+                    <h6 className="fw-bold mb-2">Technologies:</h6>
+                    <div className="d-flex flex-wrap gap-1">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span 
+                          key={techIndex} 
+                          className="badge bg-light text-dark border"
+                          style={{ fontSize: "0.75rem" }}
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Action Buttons */}
+                  <div className="d-flex gap-2 mt-auto">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline-dark flex-fill"
+                    >
+                      <i className="bi bi-github me-2"></i>
+                      Code
+                    </a>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary flex-fill"
+                    >
+                      <i className="bi bi-eye me-2"></i>
+                      Live Demo
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center py-5 bg-light rounded-4 mb-5" data-aos="fade-up">
+          <h3 className="fw-bold mb-3">Interested in Working Together?</h3>
+          <p className="lead mb-4 col-lg-8 mx-auto">
+            I'm always excited to take on new challenges and collaborate on innovative projects. 
+            Let's discuss how we can bring your ideas to life!
+          </p>
+          <div className="d-flex gap-3 justify-content-center flex-wrap">
+            <a href="#/contact" className="btn btn-primary btn-lg px-4">
+              <i className="bi bi-envelope me-2"></i>
+              Get In Touch
+            </a>
+            <a 
+              href="https://github.com/alihasanshaikh" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="btn btn-outline-dark btn-lg px-4"
+            >
+              <i className="bi bi-github me-2"></i>
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        {/* Development Process */}
+        <div className="row align-items-center mb-5">
+          <div className="col-lg-6" data-aos="fade-right">
+            <h3 className="fw-bold mb-4">My Development Process</h3>
+            <div className="d-flex flex-column gap-3">
+              <div className="d-flex align-items-start gap-3">
+                <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                     style={{ width: "40px", height: "40px", minWidth: "40px" }}>
+                  <span className="fw-bold">1</span>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-1">Planning & Analysis</h5>
+                  <p className="text-muted mb-0">Understanding requirements and creating detailed project roadmaps.</p>
+                </div>
+              </div>
+              <div className="d-flex align-items-start gap-3">
+                <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                     style={{ width: "40px", height: "40px", minWidth: "40px" }}>
+                  <span className="fw-bold">2</span>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-1">Design & Architecture</h5>
+                  <p className="text-muted mb-0">Creating wireframes, UI designs, and system architecture.</p>
+                </div>
+              </div>
+              <div className="d-flex align-items-start gap-3">
+                <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                     style={{ width: "40px", height: "40px", minWidth: "40px" }}>
+                  <span className="fw-bold">3</span>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-1">Development & Testing</h5>
+                  <p className="text-muted mb-0">Writing clean, maintainable code with comprehensive testing.</p>
+                </div>
+              </div>
+              <div className="d-flex align-items-start gap-3">
+                <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" 
+                     style={{ width: "40px", height: "40px", minWidth: "40px" }}>
+                  <span className="fw-bold">4</span>
+                </div>
+                <div>
+                  <h5 className="fw-bold mb-1">Deployment & Maintenance</h5>
+                  <p className="text-muted mb-0">Deploying to production and providing ongoing support.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6 text-center" data-aos="fade-left">
+            <div className="bg-primary bg-opacity-10 rounded-4 p-5">
+              <i className="bi bi-code-slash text-primary" style={{ fontSize: "5rem" }}></i>
+              <h4 className="mt-3 fw-bold">Clean Code Philosophy</h4>
+              <p className="text-muted">
+                I believe in writing code that is not only functional but also 
+                maintainable, scalable, and follows industry best practices.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Projects;

@@ -33,7 +33,7 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link className="nav-link text-white" to="/projects">
                 <button
                   type="button"
@@ -44,7 +44,7 @@ const Navbar = () => {
                   Projects
                 </button>
               </Link>
-            </li> */}
+            </li>
             <li className="nav-item">
               <Link className="nav-link text-white" to="/education">
                 <button
@@ -69,18 +69,6 @@ const Navbar = () => {
                 </button>
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link text-white" to="/testimonials">
-                <button
-                  type="button"
-                  className="btn btn-link text-white m-0 p-0 mx-1 text-decoration-none"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbar"
-                >
-                  Testimonials
-                </button>
-              </Link>
-            </li> */}
             <li className="nav-item">
               <Link className="nav-link text-white" to="/contact">
                 <button

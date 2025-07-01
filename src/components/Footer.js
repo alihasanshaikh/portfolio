@@ -27,11 +27,6 @@ const Footer = () => {
             </Link>
           </li>
           <li class="nav-item">
-            <Link to="/testimonials" class="nav-link px-2 text-body-secondary">
-              Testimonials
-            </Link>
-          </li>
-          <li class="nav-item">
             <Link to="/contact" class="nav-link px-2 text-body-secondary">
               Contact
             </Link>
