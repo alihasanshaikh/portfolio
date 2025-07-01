@@ -1,6 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import contact from "../assets/contact.svg";
 import map from "../assets/map.png";
@@ -9,36 +8,54 @@ import Resume from "../components/Resume";
 const Contact = () => {
   const form = useRef();
   const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
     
-    // Show loading toast
+    if (isSubmitting) return;
+    
+    setIsSubmitting(true);
     const loadingToast = toast.loading("Sending message...");
     
-    emailjs
-      .sendForm(
-        "service_e4fjwoz",
-        "template_1d6gvu8",
-        form.current,
-        "a185DCLwfO5fjx4m0"
-      )
-      .then(
-        (result) => {
-          toast.dismiss(loadingToast);
-          toast.success("Message Sent Successfully! Thank You for Contacting!");
-          console.log("Email sent successfully:", result.text);
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-          e.target.reset();
+    try {
+      const formData = new FormData(form.current);
+      const data = {
+        from_name: formData.get('from_name'),
+        from_email: formData.get('from_email'),
+        subject: formData.get('subject'),
+        message: formData.get('message')
+      };
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        (error) => {
-          toast.dismiss(loadingToast);
-          toast.error(`Failed to send message: ${error.text || 'Please try again later'}`);
-          console.error("Email send error:", error);
-        }
-      );
+        body: JSON.stringify(data)
+      });
+
+      const result = await response.json();
+
+      toast.dismiss(loadingToast);
+
+      if (result.success) {
+        toast.success(result.message);
+        form.current.reset();
+        setTimeout(() => {
+          navigate("/");
+        }, 3000);
+      } else {
+        toast.error(result.message);
+      }
+
+    } catch (error) {
+      toast.dismiss(loadingToast);
+      console.error('Contact form error:', error);
+      toast.error('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -91,6 +108,7 @@ const Contact = () => {
                   name="from_name"
                   required
                   minLength="2"
+                  disabled={isSubmitting}
                 />
               </div>
               <div className="col-12 mb-4">
@@ -102,6 +120,7 @@ const Contact = () => {
                   placeholder="Enter your Email here..."
                   name="from_email"
                   required
+                  disabled={isSubmitting}
                 />
               </div>
               <div className="col-12 mb-4">
@@ -112,6 +131,7 @@ const Contact = () => {
                   id="inputSubject"
                   placeholder="Enter subject here..."
                   name="subject"
+                  disabled={isSubmitting}
                 />
               </div>
               <div className="mb-4">
@@ -124,12 +144,26 @@ const Contact = () => {
                   name="message"
                   required
                   minLength="10"
+                  disabled={isSubmitting}
                 ></textarea>
               </div>
               <div>
-                <button className="btn btn-primary w-100" type="submit">
-                  <i className="bi bi-send me-2"></i>
-                  Send Message
+                <button 
+                  className="btn btn-primary w-100" 
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <i className="bi bi-send me-2"></i>
+                      Send Message
+                    </>
+                  )}
                 </button>
               </div>
             </form>
